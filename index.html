@@ -1,0 +1,2776 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وادي فليفل قروب القابضة | WADI FLAFL GROUP HOLDING</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* =========================================
+           CSS VARIABLES & THEMES
+           ========================================= */
+        :root {
+            --bg-primary: #FDFBF7;
+            --bg-secondary: #FFFFFF;
+            --bg-tertiary: #F7F2EA;
+            --bg-dark: #0D3B36;
+            --bg-dark-secondary: #124F48;
+            
+            --text-primary: #1A202C;
+            --text-secondary: #4A5568;
+            --text-light: #718096;
+            --text-on-dark: #FDFBF7;
+            --text-on-dark-secondary: #B8C4C2;
+            
+            --brand-gold: #FFCC00;
+            --brand-orange: #E65100;
+            --brand-red: #6E1A24;
+            --brand-teal: #0D3B36;
+            --brand-accent: #F29100;
+            
+            --accent-gold: #E65100;
+            --accent-gold-hover: #CC4400;
+            --accent-gold-light: rgba(230, 81, 0, 0.10);
+            --accent-gold-border: rgba(230, 81, 0, 0.25);
+            
+            --border-color: #EBE3D5;
+            --border-light: #F5EFE6;
+            
+            --glass-bg: rgba(255, 255, 255, 0.55);
+            --glass-border: rgba(255, 255, 255, 0.6);
+            --glass-shadow: 0 8px 32px rgba(13, 59, 54, 0.08);
+            --glass-blur: blur(24px) saturate(180%);
+            
+            --header-bg: rgba(253, 251, 247, 0.7);
+            --header-bg-scrolled: rgba(253, 251, 247, 0.92);
+            
+            --card-shadow: 0 4px 24px rgba(13, 59, 54, 0.06);
+            --card-shadow-hover: 0 24px 60px rgba(13, 59, 54, 0.15);
+            
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-slow: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #081F1C;
+            --bg-secondary: #0D3B36;
+            --bg-tertiary: #124F48;
+            --bg-dark: #041210;
+            --bg-dark-secondary: #081F1C;
+            
+            --text-primary: #FDFBF7;
+            --text-secondary: #B8C4C2;
+            --text-light: #7A8A87;
+            --text-on-dark: #FDFBF7;
+            --text-on-dark-secondary: #B8C4C2;
+            
+            --accent-gold: #F29100;
+            --accent-gold-hover: #FFCC00;
+            --accent-gold-light: rgba(242, 145, 0, 0.12);
+            --accent-gold-border: rgba(242, 145, 0, 0.3);
+            
+            --border-color: #1E5C54;
+            --border-light: #124F48;
+            
+            --glass-bg: rgba(13, 59, 54, 0.55);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            
+            --header-bg: rgba(8, 31, 28, 0.7);
+            --header-bg-scrolled: rgba(8, 31, 28, 0.92);
+            
+            --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+            --card-shadow-hover: 0 24px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        /* =========================================
+           GLOBAL RESET & TYPOGRAPHY
+           ========================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Cairo', 'Lato', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            transition: background-color 0.5s ease, color 0.5s ease;
+            overflow-x: hidden;
+        }
+
+        body[dir="ltr"] {
+            font-family: 'Lato', 'Cairo', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', 'Cairo', serif;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+
+        body[dir="ltr"] h1, body[dir="ltr"] h2, body[dir="ltr"] h3, body[dir="ltr"] h4 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1360px;
+            margin: 0 auto;
+            padding: 0 2.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.25rem;
+            }
+        }
+
+        /* =========================================
+           UTILITY CLASSES
+           ========================================= */
+        .section-padding {
+            padding: 8rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 4rem 0;
+            }
+        }
+
+        .gold-line {
+            width: 70px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--brand-orange), var(--brand-gold));
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            transition: width 0.6s ease;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4.5vw, 3.5rem);
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+            font-weight: 800;
+        }
+
+        .section-subtitle {
+            font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+            color: var(--text-secondary);
+            margin-bottom: 3.5rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        /* Modern Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            padding: 1rem 2.2rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            border-radius: 50px;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover i {
+            transform: translateX(-4px);
+        }
+
+        body[dir="ltr"] .btn:hover i {
+            transform: translateX(4px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--brand-orange), var(--brand-accent));
+            color: #FFFFFF;
+            border-color: transparent;
+            box-shadow: 0 6px 20px rgba(230, 81, 0, 0.3);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .btn-primary:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(230, 81, 0, 0.45);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-primary);
+            border-color: var(--border-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--brand-orange);
+            color: var(--brand-orange);
+            transform: translateY(-3px);
+            background-color: var(--accent-gold-light);
+            box-shadow: 0 8px 25px rgba(230, 81, 0, 0.15);
+        }
+
+        .btn-outline-light {
+            background-color: transparent;
+            color: #FFFFFF;
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .btn-outline-light:hover {
+            border-color: var(--brand-gold);
+            color: var(--brand-gold);
+            transform: translateY(-3px);
+            background-color: rgba(255, 204, 0, 0.1);
+            box-shadow: 0 8px 25px rgba(255, 204, 0, 0.2);
+        }
+
+        /* =========================================
+           HEADER - MODERN GLASSMORPHISM
+           ========================================= */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--header-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            background-color: var(--header-bg-scrolled);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 8px 32px rgba(13, 59, 54, 0.08);
+        }
+
+        /* Subtle gradient bottom line */
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--brand-orange), var(--brand-gold), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        header.scrolled::after {
+            opacity: 0.6;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 82px;
+            transition: height 0.4s ease;
+        }
+
+        header.scrolled .header-inner {
+            height: 70px;
+        }
+
+        /* Logo with subtle radial glow */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-decoration: none;
+            flex-shrink: 0;
+            position: relative;
+            padding: 4px 8px;
+            transition: var(--transition);
+        }
+
+        /* Subtle radial glow behind the logo */
+        .logo::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 140%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, rgba(255, 204, 0, 0.18) 0%, rgba(242, 145, 0, 0.08) 40%, transparent 70%);
+            border-radius: 50%;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .logo:hover::before {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .logo img {
+            height: 52px;
+            width: auto;
+            transition: height 0.4s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        header.scrolled .logo img {
+            height: 42px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo-text .brand-name {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 900;
+            color: var(--text-primary);
+            letter-spacing: 0.3px;
+            transition: font-size 0.4s ease;
+        }
+
+        header.scrolled .logo-text .brand-name {
+            font-size: 1rem;
+        }
+
+        .logo-text .brand-sub {
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: var(--brand-orange);
+            letter-spacing: 2px;
+            margin-top: 2px;
+            transition: font-size 0.4s ease;
+        }
+
+        header.scrolled .logo-text .brand-sub {
+            font-size: 0.6rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            position: relative;
+            letter-spacing: 0.3px;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--brand-orange);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--brand-orange), var(--brand-gold));
+            border-radius: 2px;
+            transition: width 0.4s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 0.6rem;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .icon-btn {
+            background: rgba(255, 255, 255, 0.4);
+            border: 1.5px solid rgba(230, 81, 0, 0.15);
+            color: var(--text-primary);
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            font-size: 0.95rem;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            flex-shrink: 0;
+        }
+
+        [data-theme="dark"] .icon-btn {
+            background: rgba(13, 59, 54, 0.4);
+        }
+
+        .icon-btn:hover {
+            border-color: var(--brand-orange);
+            color: var(--brand-orange);
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(230, 81, 0, 0.25);
+            background-color: var(--accent-gold-light);
+        }
+
+        .lang-btn {
+            font-size: 0.75rem;
+            font-weight: 800;
+            width: auto;
+            padding: 0 1.2rem;
+            border-radius: 25px;
+            gap: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+            flex-shrink: 0;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2.5px;
+            background-color: var(--text-primary);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .header-actions .lang-btn span {
+                display: none;
+            }
+            .header-actions .lang-btn {
+                width: 42px;
+                padding: 0;
+                border-radius: 12px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                height: 80px;
+            }
+            header.scrolled .header-inner {
+                height: 70px;
+            }
+            .logo img {
+                height: 56px;
+            }
+            header.scrolled .logo img {
+                height: 48px;
+            }
+            .logo-text .brand-name {
+                font-size: 1rem;
+            }
+            header.scrolled .logo-text .brand-name {
+                font-size: 0.9rem;
+            }
+            .logo-text .brand-sub {
+                font-size: 0.6rem;
+                letter-spacing: 1.5px;
+            }
+            .icon-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+            }
+            .lang-btn {
+                width: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-inner {
+                height: 74px;
+            }
+            header.scrolled .header-inner {
+                height: 66px;
+            }
+            .logo img {
+                height: 50px;
+            }
+            header.scrolled .logo img {
+                height: 44px;
+            }
+            .logo-text .brand-name {
+                font-size: 0.85rem;
+            }
+            header.scrolled .logo-text .brand-name {
+                font-size: 0.8rem;
+            }
+            .logo-text .brand-sub {
+                display: none;
+            }
+            .icon-btn {
+                width: 38px;
+                height: 38px;
+                font-size: 0.85rem;
+            }
+            .lang-btn {
+                width: 38px;
+            }
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background-color: var(--bg-secondary);
+            z-index: 999;
+            overflow-y: auto;
+            padding: 2rem 1.5rem;
+            border-top: 1px solid var(--border-color);
+            animation: slideDown 0.3s ease;
+            backdrop-filter: blur(20px);
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-menu ul li {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .mobile-menu ul li a {
+            display: block;
+            padding: 1.2rem 0;
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .mobile-menu ul li a:hover {
+            color: var(--brand-orange);
+            padding-right: 12px;
+        }
+
+        body[dir="ltr"] .mobile-menu ul li a:hover {
+            padding-right: 0;
+            padding-left: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu {
+                top: 80px;
+                height: calc(100vh - 80px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .mobile-menu {
+                top: 74px;
+                height: calc(100vh - 74px);
+            }
+        }
+
+        /* =========================================
+           HERO SECTION
+           ========================================= */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            transition: transform 12s ease;
+        }
+
+        .hero:hover .hero-bg {
+            transform: scale(1.08);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(13, 59, 54, 0.88) 0%, rgba(13, 59, 54, 0.6) 50%, rgba(13, 59, 54, 0.92) 100%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 950px;
+            padding: 0 1.5rem;
+            color: #FFFFFF;
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.6rem 1.5rem;
+            background: rgba(255, 204, 0, 0.15);
+            border: 1px solid rgba(255, 204, 0, 0.3);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--brand-gold);
+            margin-bottom: 2rem;
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-badge i {
+            font-size: 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2rem, 6vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            text-shadow: 0 4px 30px rgba(0,0,0,0.4);
+            line-height: 1.15;
+            color: #FFFFFF;
+        }
+
+        .hero-content p {
+            font-size: clamp(0.95rem, 2vw, 1.25rem);
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            font-weight: 400;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.9;
+            color: #FFFFFF;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 480px) {
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* =========================================
+           STATS BAR
+           ========================================= */
+        .stats-bar {
+            background: var(--bg-dark);
+            padding: 2.5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 204, 0, 0.05), transparent);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-item:first-child {
+            border-left: none;
+        }
+
+        body[dir="ltr"] .stat-item {
+            border-left: none;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        body[dir="ltr"] .stat-item:first-child {
+            border-right: none;
+        }
+
+        .stat-item .stat-icon {
+            font-size: 1.8rem;
+            color: var(--brand-gold);
+            margin-bottom: 0.8rem;
+        }
+
+        .stat-item .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-on-dark);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .stat-item {
+                border-left: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding-bottom: 1.5rem;
+            }
+            .stat-item:nth-child(3),
+            .stat-item:nth-child(4) {
+                border-bottom: none;
+                padding-bottom: 1rem;
+            }
+            body[dir="ltr"] .stat-item {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            body[dir="ltr"] .stat-item:nth-child(3),
+            body[dir="ltr"] .stat-item:nth-child(4) {
+                border-bottom: none;
+            }
+        }
+
+        /* =========================================
+           SECTORS SECTION
+           ========================================= */
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .sector-card {
+            position: relative;
+            padding: 3rem 2.5rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            transition: var(--transition);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+
+        .sector-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--brand-orange), var(--brand-gold));
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.6s ease;
+        }
+
+        .sector-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(230, 81, 0, 0.06) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.6s ease;
+            pointer-events: none;
+        }
+
+        .sector-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .sector-card:hover::after {
+            opacity: 1;
+        }
+
+        .sector-card:hover {
+            border-color: var(--accent-gold-border);
+            transform: translateY(-10px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        body[dir="ltr"] .sector-card::before {
+            right: auto;
+            left: 0;
+        }
+
+        .sector-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.8rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sector-icon-wrap {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--brand-orange), var(--brand-accent));
+            border-radius: 20px;
+            flex-shrink: 0;
+            box-shadow: 0 10px 30px rgba(230, 81, 0, 0.3);
+            transition: var(--transition);
+        }
+
+        .sector-card:hover .sector-icon-wrap {
+            transform: rotate(-6deg) scale(1.05);
+            box-shadow: 0 15px 40px rgba(230, 81, 0, 0.45);
+        }
+
+        .sector-icon-wrap i {
+            font-size: 2.2rem;
+            color: #FFFFFF;
+        }
+
+        .sector-title h3 {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
+            line-height: 1.3;
+        }
+
+        .sector-title .sector-en {
+            font-family: 'Lato', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--brand-orange);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .sector-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sector-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sector-features span {
+            font-size: 0.75rem;
+            padding: 0.4rem 0.9rem;
+            background: var(--accent-gold-light);
+            color: var(--brand-orange);
+            border-radius: 20px;
+            font-weight: 600;
+            border: 1px solid var(--accent-gold-border);
+            transition: var(--transition);
+        }
+
+        .sector-features span:hover {
+            background: var(--brand-orange);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 992px) {
+            .sectors-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .sector-card {
+                padding: 2rem 1.5rem;
+            }
+            .sector-icon-wrap {
+                width: 65px;
+                height: 65px;
+                border-radius: 16px;
+            }
+            .sector-icon-wrap i {
+                font-size: 1.8rem;
+            }
+            .sector-title h3 {
+                font-size: 1.25rem;
+            }
+            .sector-header {
+                gap: 1rem;
+                margin-bottom: 1.3rem;
+            }
+        }
+
+        /* =========================================
+           ABOUT SECTION
+           ========================================= */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            height: 550px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s ease;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.08);
+        }
+
+        .about-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--brand-orange), var(--brand-gold));
+        }
+
+        .about-text h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .about-text .gold-line {
+            margin-bottom: 2rem;
+        }
+
+        .about-text p {
+            color: var(--text-secondary);
+            margin-bottom: 1.3rem;
+            font-size: 1rem;
+            line-height: 1.9;
+        }
+
+        @media (max-width: 992px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .about-image {
+                height: 400px;
+            }
+        }
+
+        /* =========================================
+           VISION / MISSION / VALUES
+           ========================================= */
+        .vmv-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .vmv-card {
+            background: var(--bg-secondary);
+            padding: 3rem 2rem;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .vmv-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--brand-orange), var(--brand-gold), var(--brand-red));
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.6s ease;
+        }
+
+        .vmv-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .vmv-card:hover {
+            border-color: var(--accent-gold-border);
+            transform: translateY(-10px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .vmv-icon-wrap {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--accent-gold-light), rgba(255, 204, 0, 0.15));
+            border-radius: 50%;
+            margin: 0 auto 1.8rem;
+            border: 2px solid var(--accent-gold-border);
+            transition: var(--transition);
+        }
+
+        .vmv-card:hover .vmv-icon-wrap {
+            transform: scale(1.1) rotate(-5deg);
+            background: linear-gradient(135deg, var(--brand-orange), var(--brand-accent));
+            border-color: transparent;
+        }
+
+        .vmv-icon-wrap i {
+            font-size: 2rem;
+            color: var(--brand-orange);
+            transition: var(--transition);
+        }
+
+        .vmv-card:hover .vmv-icon-wrap i {
+            color: #FFFFFF;
+        }
+
+        .vmv-card h3 {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.35rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            font-weight: 800;
+        }
+
+        .vmv-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.9;
+        }
+
+        .values-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .values-list span {
+            background-color: var(--bg-tertiary);
+            padding: 0.5rem 1.1rem;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .values-list span:hover {
+            border-color: var(--brand-orange);
+            color: var(--brand-orange);
+            transform: translateY(-3px) scale(1.05);
+            background-color: var(--accent-gold-light);
+            box-shadow: 0 8px 20px rgba(230, 81, 0, 0.15);
+        }
+
+        @media (max-width: 992px) {
+            .vmv-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* =========================================
+           HOW WE WORK
+           ========================================= */
+        .how-work-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .work-step {
+            position: relative;
+            padding: 2.5rem 1.8rem;
+            border-radius: 20px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            text-align: center;
+            box-shadow: var(--card-shadow);
+        }
+
+        .work-step:hover {
+            border-color: var(--accent-gold-border);
+            transform: translateY(-10px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .work-step-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--accent-gold-light), rgba(255, 204, 0, 0.15));
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            border: 2px solid var(--accent-gold-border);
+            transition: var(--transition);
+        }
+
+        .work-step:hover .work-step-icon {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, var(--brand-orange), var(--brand-accent));
+            border-color: transparent;
+        }
+
+        .work-step-icon i {
+            font-size: 1.5rem;
+            color: var(--brand-orange);
+            transition: var(--transition);
+        }
+
+        .work-step:hover .work-step-icon i {
+            color: #FFFFFF;
+        }
+
+        .work-step .step-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--brand-orange), var(--brand-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 0.8rem;
+        }
+
+        .work-step h4 {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.05rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+            font-weight: 800;
+        }
+
+        .work-step p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 992px) {
+            .how-work-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .how-work-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .work-step {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* =========================================
+           GALLERY SECTION
+           ========================================= */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            aspect-ratio: 1 / 1;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 50%, rgba(13, 59, 54, 0.8));
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .gallery-item::before {
+            content: '\f00e';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 60px;
+            height: 60px;
+            background: var(--brand-orange);
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            z-index: 2;
+            transition: transform 0.4s ease;
+            opacity: 0;
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        .gallery-item:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.15);
+        }
+
+        .gallery-item:hover {
+            border-color: var(--brand-orange);
+            box-shadow: var(--card-shadow-hover);
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 992px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.7rem;
+            }
+            .gallery-item {
+                border-radius: 12px;
+            }
+        }
+
+        /* =========================================
+           PRESENCE SECTION
+           ========================================= */
+        .presence-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .presence-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .presence-card:hover {
+            border-color: var(--accent-gold-border);
+            transform: translateY(-10px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .presence-card .presence-info {
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .presence-card .presence-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--brand-orange), var(--brand-gold));
+        }
+
+        .presence-card .presence-icon {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--brand-orange), var(--brand-accent));
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 15px 35px rgba(230, 81, 0, 0.3);
+            transition: var(--transition);
+        }
+
+        .presence-card:hover .presence-icon {
+            transform: scale(1.1) rotate(-8deg);
+            box-shadow: 0 20px 45px rgba(230, 81, 0, 0.5);
+        }
+
+        .presence-card .presence-icon i {
+            font-size: 2.5rem;
+            color: #FFFFFF;
+        }
+
+        .presence-card .presence-info h3 {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.7rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            font-weight: 800;
+        }
+
+        .presence-card .presence-info .sub {
+            font-size: 0.75rem;
+            color: var(--brand-orange);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1.2rem;
+            font-weight: 800;
+        }
+
+        .presence-card .presence-info p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        /* =========================================
+           WORK DETAILS SECTION
+           ========================================= */
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .detail-item {
+            padding: 2.5rem 2rem;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-secondary);
+            transition: var(--transition);
+            position: relative;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+        }
+
+        .detail-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--brand-orange), var(--brand-gold));
+            border-radius: 20px 20px 0 0;
+            transform: scaleX(0);
+            transition: transform 0.5s ease;
+        }
+
+        .detail-item:hover::before {
+            transform: scaleX(1);
+        }
+
+        .detail-item:hover {
+            border-color: var(--accent-gold-border);
+            transform: translateY(-8px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .detail-icon-wrap {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--accent-gold-light), rgba(255, 204, 0, 0.15));
+            border-radius: 50%;
+            margin: 0 auto 1.2rem;
+            border: 2px solid var(--accent-gold-border);
+            transition: var(--transition);
+        }
+
+        .detail-item:hover .detail-icon-wrap {
+            background: linear-gradient(135deg, var(--brand-orange), var(--brand-accent));
+            border-color: transparent;
+            transform: scale(1.1);
+        }
+
+        .detail-icon-wrap i {
+            font-size: 1.6rem;
+            color: var(--brand-orange);
+            transition: var(--transition);
+        }
+
+        .detail-item:hover .detail-icon-wrap i {
+            color: #FFFFFF;
+        }
+
+        .detail-item h4 {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+            font-weight: 800;
+        }
+
+        .detail-item p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .details-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .detail-item {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* =========================================
+           CONTACT SECTION
+           ========================================= */
+        .contact-section {
+            background-color: var(--bg-secondary);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, var(--accent-gold-light) 0%, transparent 60%);
+            opacity: 0.8;
+        }
+
+        .contact-section h2 {
+            font-size: clamp(1.6rem, 4.5vw, 3rem);
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+            color: var(--text-primary);
+            font-weight: 800;
+        }
+
+        .contact-section > .container > p {
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            font-size: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 1;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            padding: 2.5rem 1.8rem;
+            border-radius: 20px;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .contact-card:hover {
+            border-color: var(--accent-gold-border);
+            transform: translateY(-8px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .contact-card .contact-icon {
+            font-size: 1.8rem;
+            color: #FFFFFF;
+            margin-bottom: 1.2rem;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--brand-orange), var(--brand-accent));
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 10px 25px rgba(230, 81, 0, 0.3);
+            transition: var(--transition);
+        }
+
+        .contact-card:hover .contact-icon {
+            transform: scale(1.1) rotate(-8deg);
+            box-shadow: 0 15px 35px rgba(230, 81, 0, 0.5);
+        }
+
+        .contact-card .contact-number {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1px;
+            direction: ltr;
+        }
+
+        .contact-card .contact-buttons {
+            display: flex;
+            gap: 0.7rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-card .contact-buttons .btn {
+            padding: 0.7rem 1.3rem;
+            font-size: 0.8rem;
+        }
+
+        .contact-location {
+            position: relative;
+            z-index: 1;
+            margin-top: 1.5rem;
+        }
+
+        .contact-location a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1.1rem 2.8rem;
+            background: linear-gradient(135deg, var(--brand-orange), var(--brand-accent));
+            color: #FFFFFF;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+            font-weight: 700;
+            box-shadow: 0 6px 20px rgba(230, 81, 0, 0.3);
+        }
+
+        .contact-location a:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 40px rgba(230, 81, 0, 0.45);
+        }
+
+        .contact-location a i {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+            .contact-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .contact-card .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-card .contact-buttons .btn {
+                width: 100%;
+                max-width: 260px;
+            }
+        }
+
+        /* =========================================
+           FOOTER
+           ========================================= */
+        footer {
+            background: var(--bg-dark);
+            color: var(--text-on-dark-secondary);
+            padding: 5rem 0 2rem;
+            transition: background-color 0.5s ease;
+            position: relative;
+            backdrop-filter: blur(20px);
+        }
+
+        [data-theme="dark"] footer {
+            background: var(--bg-dark-secondary);
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--brand-orange), var(--brand-gold), transparent);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .logo-placeholder {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            letter-spacing: 0.3px;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-brand .footer-sub {
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--brand-gold);
+            letter-spacing: 2px;
+            margin-bottom: 1.2rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            opacity: 0.85;
+            line-height: 1.9;
+            max-width: 380px;
+        }
+
+        .footer-links h4 {
+            color: #FFFFFF;
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.7rem;
+            font-weight: 800;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .footer-links h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 35px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--brand-orange), var(--brand-gold));
+            border-radius: 3px;
+        }
+
+        body[dir="ltr"] .footer-links h4::after {
+            right: auto;
+            left: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 0.9rem;
+        }
+
+        .footer-links ul li a {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            transition: var(--transition);
+            display: inline-block;
+            color: var(--text-on-dark-secondary);
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--brand-gold);
+            opacity: 1;
+            transform: translateX(-6px);
+        }
+
+        body[dir="ltr"] .footer-links ul li a:hover {
+            transform: translateX(6px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 992px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .footer-brand p {
+                max-width: 100%;
+            }
+        }
+
+        /* =========================================
+           REVEAL ANIMATIONS
+           ========================================= */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.9s ease, transform 0.9s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+            html {
+                scroll-behavior: auto;
+            }
+            .hero:hover .hero-bg {
+                transform: none;
+            }
+        }
+
+        /* =========================================
+           SCROLLBAR
+           ========================================= */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--brand-orange), var(--brand-accent));
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--brand-orange);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- =========================================
+         HEADER
+         ========================================= -->
+    <header id="mainHeader">
+        <div class="container header-inner">
+            <a href="#" class="logo" id="headerLogo">
+                <!-- Logo will be injected via JS -->
+            </a>
+
+            <nav class="nav-links" id="desktopNav">
+                <!-- Nav links injected via JS -->
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn lang-btn" id="langToggle" aria-label="Toggle Language">
+                    <i class="fas fa-globe"></i> <span>EN</span>
+                </button>
+                <button class="icon-btn" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul id="mobileNavList">
+            <!-- Mobile nav links injected via JS -->
+        </ul>
+    </div>
+
+    <!-- =========================================
+         HERO SECTION
+         ========================================= -->
+    <section class="hero" id="home">
+        <img src="" alt="Hero" class="hero-bg" id="heroBg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-building"></i>
+                <span id="heroBadge"></span>
+            </div>
+            <h1 id="heroTitle"></h1>
+            <p id="heroDesc"></p>
+            <div class="hero-buttons">
+                <a href="#sectors" class="btn btn-primary" id="heroBtn1"></a>
+                <a href="#contact" class="btn btn-outline-light" id="heroBtn2"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         STATS BAR
+         ========================================= -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid" id="statsGrid">
+                <!-- Stats injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SECTORS SECTION (PROMINENT)
+         ========================================= -->
+    <section class="section-padding" id="sectors">
+        <div class="container">
+            <h2 class="section-title reveal" id="sectorsTitle"></h2>
+            <div class="gold-line reveal"></div>
+            <p class="section-subtitle reveal" id="sectorsSubtitle"></p>
+            
+            <div class="sectors-grid" id="sectorsGrid">
+                <!-- Sectors injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         ABOUT SECTION
+         ========================================= -->
+    <section class="section-padding" style="background-color: var(--bg-tertiary);" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="" alt="About" id="aboutImg">
+                </div>
+                <div class="about-text reveal">
+                    <h2 class="section-title" id="aboutTitle"></h2>
+                    <div class="gold-line"></div>
+                    <p id="aboutP1"></p>
+                    <p id="aboutP2"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         VISION / MISSION / VALUES
+         ========================================= -->
+    <section class="section-padding" id="vmv">
+        <div class="container">
+            <div class="vmv-grid">
+                <div class="vmv-card reveal">
+                    <div class="vmv-icon-wrap">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 id="visionTitle"></h3>
+                    <p id="visionText"></p>
+                </div>
+                <div class="vmv-card reveal">
+                    <div class="vmv-icon-wrap">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 id="missionTitle"></h3>
+                    <p id="missionText"></p>
+                </div>
+                <div class="vmv-card reveal">
+                    <div class="vmv-icon-wrap">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 id="valuesTitle"></h3>
+                    <div class="values-list" id="valuesList"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         HOW WE WORK
+         ========================================= -->
+    <section class="section-padding" style="background-color: var(--bg-tertiary);" id="how-we-work">
+        <div class="container">
+            <h2 class="section-title reveal" id="howTitle"></h2>
+            <div class="gold-line reveal"></div>
+            <p class="section-subtitle reveal" id="howSubtitle"></p>
+            
+            <div class="how-work-grid">
+                <div class="work-step reveal">
+                    <div class="work-step-icon"><i class="fas fa-clipboard-list"></i></div>
+                    <div class="step-number">01</div>
+                    <h4 id="step1Title"></h4>
+                    <p id="step1Desc"></p>
+                </div>
+                <div class="work-step reveal">
+                    <div class="work-step-icon"><i class="fas fa-hard-hat"></i></div>
+                    <div class="step-number">02</div>
+                    <h4 id="step2Title"></h4>
+                    <p id="step2Desc"></p>
+                </div>
+                <div class="work-step reveal">
+                    <div class="work-step-icon"><i class="fas fa-ship"></i></div>
+                    <div class="step-number">03</div>
+                    <h4 id="step3Title"></h4>
+                    <p id="step3Desc"></p>
+                </div>
+                <div class="work-step reveal">
+                    <div class="work-step-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="step-number">04</div>
+                    <h4 id="step4Title"></h4>
+                    <p id="step4Desc"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         GALLERY SECTION (8 IMAGES)
+         ========================================= -->
+    <section class="section-padding" id="gallery">
+        <div class="container">
+            <h2 class="section-title reveal" id="galleryTitle"></h2>
+            <div class="gold-line reveal"></div>
+            <p class="section-subtitle reveal" id="gallerySubtitle"></p>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery images injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         PRESENCE SECTION
+         ========================================= -->
+    <section class="section-padding" style="background-color: var(--bg-tertiary);" id="presence">
+        <div class="container">
+            <h2 class="section-title reveal" id="presenceTitle"></h2>
+            <div class="gold-line reveal"></div>
+            
+            <div class="presence-grid" id="presenceGrid">
+                <!-- Presence injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         WORK DETAILS SECTION
+         ========================================= -->
+    <section class="section-padding" id="details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="detail-item reveal">
+                    <div class="detail-icon-wrap"><i class="fas fa-clock"></i></div>
+                    <h4 id="detailHoursTitle"></h4>
+                    <p id="detailHoursText"></p>
+                </div>
+                <div class="detail-item reveal">
+                    <div class="detail-icon-wrap"><i class="fas fa-map-marked-alt"></i></div>
+                    <h4 id="detailCoverageTitle"></h4>
+                    <p id="detailCoverageText"></p>
+                </div>
+                <div class="detail-item reveal">
+                    <div class="detail-icon-wrap"><i class="fas fa-handshake"></i></div>
+                    <h4 id="detailPartnersTitle"></h4>
+                    <p id="detailPartnersText"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         CONTACT SECTION
+         ========================================= -->
+    <section class="section-padding contact-section" id="contact">
+        <div class="container">
+            <h2 class="reveal" id="contactTitle"></h2>
+            <p class="reveal" id="contactDesc"></p>
+            
+            <div class="contact-grid" id="contactGrid">
+                <!-- Contact cards will be injected via JS -->
+            </div>
+            
+            <div class="contact-location reveal">
+                <a href="" id="contactMapLink" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-map-marker-alt"></i> <span id="contactMapText"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-placeholder" id="footerLogo"></div>
+                    <div class="footer-sub" id="footerSub">GROUP HOLDING</div>
+                    <p id="footerDesc"></p>
+                </div>
+                <div class="footer-links">
+                    <h4 id="footerNavTitle"></h4>
+                    <ul id="footerNavList"></ul>
+                </div>
+                <div class="footer-links">
+                    <h4 id="footerServicesTitle"></h4>
+                    <ul id="footerServicesList"></ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="footerCopyright"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // =========================================
+        // SITE CONFIGURATION
+        // =========================================
+        const SITE_CONFIG = {
+            companyName: "وادي فليفل قروب القابضة",
+            companyNameEn: "WADI FLAFL GROUP HOLDING",
+            
+            mainLogo: "lo.png",
+            
+            images: {
+                hero: "hero.jpeg",
+                about: "about.jpeg",
+                g1: "g1.jpeg",
+                g2: "g2.jpeg",
+                g3: "g3.jpeg",
+                g4: "g4.jpeg",
+                g5: "g5.jpeg",
+                g6: "g6.jpeg",
+                g7: "g7.jpeg",
+                g8: "g8.jpeg"
+            },
+            
+            locationLink: "https://maps.app.goo.gl/si12SZe5eeRCXi6r6?g_st=iwb",
+            
+            phones: [
+                {
+                    number: "+218916888817",
+                    display: "0916888817",
+                    whatsapp: "218916888817"
+                },
+                {
+                    number: "+218916888666",
+                    display: "0916888666",
+                    whatsapp: "218916888666"
+                }
+            ],
+            
+            defaultLang: "ar",
+            defaultTheme: "light"
+        };
+
+        // =========================================
+        // TRANSLATIONS
+        // =========================================
+        const TRANSLATIONS = {
+            ar: {
+                navHome: "الرئيسية",
+                navSectors: "قطاعاتنا",
+                navAbout: "عن الشركة",
+                navHow: "منهجية العمل",
+                navGallery: "معرض الصور",
+                navPresence: "حضورنا",
+                navContact: "تواصل معنا",
+                
+                heroBadge: "شركة قابضة متعددة القطاعات",
+                heroTitle: "وادي فليفل قروب القابضة",
+                heroDesc: "شركة قابضة رائدة في مجالات الطرق، واستيراد وتصدير الآليات وقطع الغيار والكسارات. نقدم حلولاً متكاملة بأعلى معايير الجودة والاحترافية.",
+                heroBtn1: "استكشف قطاعاتنا",
+                heroBtn2: "تواصل معنا",
+                
+                // Stats
+                stats: [
+                    { icon: "fa-road", label: "مشاريع الطرق" },
+                    { icon: "fa-truck", label: "الآليات والمعدات" },
+                    { icon: "fa-cogs", label: "قطع الغيار" },
+                    { icon: "fa-industry", label: "الكسارات" }
+                ],
+                
+                // Sectors
+                sectorsTitle: "قطاعاتنا ومنتجاتنا",
+                sectorsSubtitle: "أربعة قطاعات رئيسية تحت مظلة واحدة",
+                sectors: [
+                    {
+                        icon: "fa-road",
+                        nameAr: "الطرق",
+                        nameEn: "ROADS",
+                        desc: "تنفيذ وصيانة الطرق وفق أعلى المعايير الهندسية العالمية، باستخدام أحدث المعدات والتقنيات.",
+                        features: ["إنشاء الطرق", "الصيانة", "البنية التحتية"]
+                    },
+                    {
+                        icon: "fa-truck",
+                        nameAr: "استيراد وتصدير الآليات",
+                        nameEn: "MACHINERY IMPORT & EXPORT",
+                        desc: "استيراد وتصدير جميع أنواع الآليات والمعدات الثقيلة والخفيفة المستخدمة في المشاريع الإنشائية.",
+                        features: ["معدات ثقيلة", "آليات إنشائية", "توريد المشاريع"]
+                    },
+                    {
+                        icon: "fa-cogs",
+                        nameAr: "استيراد وتصدير قطع الغيار",
+                        nameEn: "SPARE PARTS IMPORT & EXPORT",
+                        desc: "توفير قطع غيار أصلية ومعتمدة لجميع الآليات والمعدات، مع ضمان الجودة والسرعة في التوريد.",
+                        features: ["قطع أصلية", "توريد سريع", "ضمان الجودة"]
+                    },
+                    {
+                        icon: "fa-industry",
+                        nameAr: "استيراد وتصدير الكسارات",
+                        nameEn: "CRUSHERS IMPORT & EXPORT",
+                        desc: "استيراد وتصدير الكسارات ومعدات التكسير والغربلة المستخدمة في صناعة مواد البناء والتعدين.",
+                        features: ["كسارات متنقلة", "معدات تكسير", "خطوط إنتاج"]
+                    }
+                ],
+                
+                aboutTitle: "عن الشركة",
+                aboutP1: "وادي فليفل قروب القابضة هي شركة ليبية رائدة تعمل كشركة قابضة متعددة القطاعات، تشمل تنفيذ مشاريع الطرق، واستيراد وتصدير الآليات وقطع الغيار والكسارات، من خلال منظومة متكاملة من الشركات التابعة.",
+                aboutP2: "نجمع بين خبرة ميدانية واسعة وبين معايير عمل حديثة، لنقدم لعملائنا حلولاً موثوقة وعالية الجودة تلبي احتياجات السوق المحلي والإقليمي، مع الالتزام بأعلى معايير الشفافية والاحترافية.",
+                
+                visionTitle: "رؤيتنا",
+                visionText: "أن نكون الشركة القابضة الأكثر تأثيراً وثقة في ليبيا، من خلال حلول مبتكرة تواكب أفضل المعايير العالمية.",
+                missionTitle: "رسالتنا",
+                missionText: "تقديم خدمات متكاملة في مجالات الطرق والاستيراد والتصدير، تعتمد على الجودة والشفافية، لتحقيق قيمة حقيقية لعملائنا وشركائنا.",
+                valuesTitle: "قيمنا",
+                values: ["المصداقية", "الاحترافية", "الابتكار", "الجودة", "الشراكة", "رضا العملاء"],
+                
+                howTitle: "منهجية العمل",
+                howSubtitle: "HOW WE WORK",
+                step1Title: "التخطيط والدراسة",
+                step1Desc: "دراسة المشروع وتحديد المتطلبات بدقة.",
+                step2Title: "التنفيذ والمتابعة",
+                step2Desc: "تنفيذ المشروع وفق أعلى المعايير مع المتابعة المستمرة.",
+                step3Title: "الاستيراد والتوريد",
+                step3Desc: "استيراد الآليات وقطع الغيار والكسارات بأفضل الأسعار.",
+                step4Title: "التسليم والدعم",
+                step4Desc: "تسليم المشروع ومتابعة العميل بعد التسليم.",
+                
+                galleryTitle: "معرض الصور",
+                gallerySubtitle: "لمحة من أعمالنا ومشاريعنا",
+                
+                presenceTitle: "حضورنا",
+                presence: [
+                    { city: "الكريمية", sub: "المقر الرئيسي — HEAD OFFICE", desc: "الكريمية، ليبيا — المركز الرئيسي لعملياتنا." }
+                ],
+                
+                detailHoursTitle: "أوقات العمل",
+                detailHoursText: "الأحد – الخميس: 9:00 – 17:00",
+                detailCoverageTitle: "نطاق الخدمة",
+                detailCoverageText: "جميع أنحاء ليبيا والمنطقة الإقليمية.",
+                detailPartnersTitle: "الشراكات",
+                detailPartnersText: "شركات محلية ودولية في مجال الطرق والاستيراد والتصدير.",
+                
+                contactTitle: "تواصل معنا",
+                contactDesc: "للاستفسار أو الشراكة، تواصل معنا في أي وقت.",
+                contactBtnCall: "اتصل",
+                contactBtnWhatsapp: "واتساب",
+                contactMapText: "موقعنا على الخريطة",
+                
+                footerDesc: "شركة قابضة ليبية رائدة في مجالات الطرق، استيراد وتصدير الآليات وقطع الغيار والكسارات.",
+                footerNavTitle: "روابط سريعة",
+                footerServicesTitle: "قطاعاتنا",
+                footerCopyright: "© 2026 وادي فليفل قروب القابضة — جميع الحقوق محفوظة."
+            },
+            en: {
+                navHome: "Home",
+                navSectors: "Sectors",
+                navAbout: "About Us",
+                navHow: "How We Work",
+                navGallery: "Gallery",
+                navPresence: "Our Presence",
+                navContact: "Contact Us",
+                
+                heroBadge: "Multi-Sector Holding Company",
+                heroTitle: "WADI FLAFL GROUP HOLDING",
+                heroDesc: "A leading holding company in roads, import and export of machinery, spare parts, and crushers. We provide integrated solutions with the highest quality and professionalism.",
+                heroBtn1: "Explore Our Sectors",
+                heroBtn2: "Contact Us",
+                
+                stats: [
+                    { icon: "fa-road", label: "Road Projects" },
+                    { icon: "fa-truck", label: "Machinery & Equipment" },
+                    { icon: "fa-cogs", label: "Spare Parts" },
+                    { icon: "fa-industry", label: "Crushers" }
+                ],
+                
+                sectorsTitle: "Our Sectors & Products",
+                sectorsSubtitle: "Four main sectors under one umbrella",
+                sectors: [
+                    {
+                        icon: "fa-road",
+                        nameAr: "Roads",
+                        nameEn: "ROADS",
+                        desc: "Executing and maintaining roads according to the highest international engineering standards, using the latest equipment and technologies.",
+                        features: ["Road Construction", "Maintenance", "Infrastructure"]
+                    },
+                    {
+                        icon: "fa-truck",
+                        nameAr: "Machinery Import & Export",
+                        nameEn: "MACHINERY IMPORT & EXPORT",
+                        desc: "Importing and exporting all types of heavy and light machinery and equipment used in construction projects.",
+                        features: ["Heavy Equipment", "Construction Machinery", "Project Supply"]
+                    },
+                    {
+                        icon: "fa-cogs",
+                        nameAr: "Spare Parts Import & Export",
+                        nameEn: "SPARE PARTS IMPORT & EXPORT",
+                        desc: "Providing original and certified spare parts for all machinery and equipment, with quality assurance and fast supply.",
+                        features: ["Original Parts", "Fast Supply", "Quality Guarantee"]
+                    },
+                    {
+                        icon: "fa-industry",
+                        nameAr: "Crushers Import & Export",
+                        nameEn: "CRUSHERS IMPORT & EXPORT",
+                        desc: "Importing and exporting crushers, crushing and screening equipment used in building materials and mining industries.",
+                        features: ["Mobile Crushers", "Crushing Equipment", "Production Lines"]
+                    }
+                ],
+                
+                aboutTitle: "About Us",
+                aboutP1: "WADI FLAFL GROUP HOLDING is a leading Libyan multi-sector holding company, including road construction projects, import and export of machinery, spare parts, and crushers, through an integrated system of subsidiaries.",
+                aboutP2: "We combine extensive field experience with modern work standards to provide our clients with reliable and high-quality solutions that meet the needs of the local and regional market, with commitment to the highest standards of transparency and professionalism.",
+                
+                visionTitle: "Our Vision",
+                visionText: "To be the most influential and trusted holding company in Libya, through innovative solutions that keep pace with the best global standards.",
+                missionTitle: "Our Mission",
+                missionText: "Providing integrated services in roads, import, and export, based on quality and transparency, to achieve real value for our clients and partners.",
+                valuesTitle: "Our Values",
+                values: ["Credibility", "Professionalism", "Innovation", "Quality", "Partnership", "Client Satisfaction"],
+                
+                howTitle: "How We Work",
+                howSubtitle: "OUR METHODOLOGY",
+                step1Title: "Planning & Study",
+                step1Desc: "Studying the project and defining requirements accurately.",
+                step2Title: "Execution & Follow-up",
+                step2Desc: "Executing the project according to the highest standards with continuous follow-up.",
+                step3Title: "Import & Supply",
+                step3Desc: "Importing machinery, spare parts, and crushers at the best prices.",
+                step4Title: "Delivery & Support",
+                step4Desc: "Delivering the project and following up with the client after delivery.",
+                
+                galleryTitle: "Gallery",
+                gallerySubtitle: "A glimpse of our work and projects",
+                
+                presenceTitle: "Our Presence",
+                presence: [
+                    { city: "Al-Karimiyah", sub: "HEAD OFFICE", desc: "Al-Karimiyah, Libya — Our main operations center." }
+                ],
+                
+                detailHoursTitle: "Working Hours",
+                detailHoursText: "Sunday – Thursday: 9:00 – 17:00",
+                detailCoverageTitle: "Coverage",
+                detailCoverageText: "All of Libya and the regional area.",
+                detailPartnersTitle: "Partnerships",
+                detailPartnersText: "Local and international companies in roads, import, and export.",
+                
+                contactTitle: "Contact Us",
+                contactDesc: "For inquiries or partnership, contact us at any time.",
+                contactBtnCall: "Call",
+                contactBtnWhatsapp: "WhatsApp",
+                contactMapText: "Our Location on Map",
+                
+                footerDesc: "A leading Libyan holding company in roads, import and export of machinery, spare parts, and crushers.",
+                footerNavTitle: "Quick Links",
+                footerServicesTitle: "Our Sectors",
+                footerCopyright: "© 2026 WADI FLAFL GROUP HOLDING — All rights reserved."
+            }
+        };
+
+        let currentLang = localStorage.getItem('wfg_lang') || SITE_CONFIG.defaultLang;
+        let currentTheme = localStorage.getItem('wfg_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initTheme();
+            initLanguage();
+            renderContent();
+            initMobileMenu();
+            initScrollReveal();
+            initSmoothScroll();
+            initHeaderScroll();
+        });
+
+        function initTheme() {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            updateThemeIcon();
+        }
+
+        function toggleTheme() {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('wfg_theme', currentTheme);
+            updateThemeIcon();
+        }
+
+        function updateThemeIcon() {
+            const icon = document.querySelector('#themeToggle i');
+            if (currentTheme === 'dark') {
+                icon.className = 'fas fa-sun';
+            } else {
+                icon.className = 'fas fa-moon';
+            }
+        }
+
+        function initLanguage() {
+            document.documentElement.lang = currentLang;
+            document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+            updateLangButton();
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+            localStorage.setItem('wfg_lang', currentLang);
+            initLanguage();
+            renderContent();
+        }
+
+        function updateLangButton() {
+            const btn = document.getElementById('langToggle');
+            btn.innerHTML = `<i class="fas fa-globe"></i> <span>${currentLang === 'ar' ? 'EN' : 'AR'}</span>`;
+        }
+
+        function renderContent() {
+            const t = TRANSLATIONS[currentLang];
+            const companyName = currentLang === 'ar' ? SITE_CONFIG.companyName : SITE_CONFIG.companyNameEn;
+            
+            // Header Logo
+            const headerLogo = document.getElementById('headerLogo');
+            headerLogo.innerHTML = `
+                <img src="${SITE_CONFIG.mainLogo}" alt="${companyName}" 
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-text" style="display:flex;">
+                    <span class="brand-name">${companyName}</span>
+                    <span class="brand-sub">GROUP HOLDING</span>
+                </div>
+            `;
+
+            // Navigation
+            const navItems = [
+                { href: "#home", text: t.navHome },
+                { href: "#sectors", text: t.navSectors },
+                { href: "#about", text: t.navAbout },
+                { href: "#how-we-work", text: t.navHow },
+                { href: "#gallery", text: t.navGallery },
+                { href: "#contact", text: t.navContact }
+            ];
+
+            document.getElementById('desktopNav').innerHTML = navItems.map(item => `<a href="${item.href}">${item.text}</a>`).join('');
+            document.getElementById('mobileNavList').innerHTML = navItems.map(item => `<li><a href="${item.href}" class="mobile-link">${item.text}</a></li>`).join('');
+
+            // Hero
+            document.getElementById('heroBg').src = SITE_CONFIG.images.hero;
+            document.getElementById('heroBadge').textContent = t.heroBadge;
+            document.getElementById('heroTitle').textContent = t.heroTitle;
+            document.getElementById('heroDesc').textContent = t.heroDesc;
+            document.getElementById('heroBtn1').textContent = t.heroBtn1;
+            document.getElementById('heroBtn2').textContent = t.heroBtn2;
+
+            // Stats
+            const statsGrid = document.getElementById('statsGrid');
+            statsGrid.innerHTML = t.stats.map(stat => `
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas ${stat.icon}"></i></div>
+                    <div class="stat-label">${stat.label}</div>
+                </div>
+            `).join('');
+
+            // Sectors
+            document.getElementById('sectorsTitle').textContent = t.sectorsTitle;
+            document.getElementById('sectorsSubtitle').textContent = t.sectorsSubtitle;
+            const sectorsGrid = document.getElementById('sectorsGrid');
+            sectorsGrid.innerHTML = t.sectors.map(sector => `
+                <div class="sector-card reveal">
+                    <div class="sector-header">
+                        <div class="sector-icon-wrap">
+                            <i class="fas ${sector.icon}"></i>
+                        </div>
+                        <div class="sector-title">
+                            <h3>${sector.nameAr}</h3>
+                            <div class="sector-en">${sector.nameEn}</div>
+                        </div>
+                    </div>
+                    <p class="sector-desc">${sector.desc}</p>
+                    <div class="sector-features">
+                        ${sector.features.map(f => `<span>${f}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+
+            // About
+            document.getElementById('aboutImg').src = SITE_CONFIG.images.about;
+            document.getElementById('aboutTitle').textContent = t.aboutTitle;
+            document.getElementById('aboutP1').textContent = t.aboutP1;
+            document.getElementById('aboutP2').textContent = t.aboutP2;
+
+            // VMV
+            document.getElementById('visionTitle').textContent = t.visionTitle;
+            document.getElementById('visionText').textContent = t.visionText;
+            document.getElementById('missionTitle').textContent = t.missionTitle;
+            document.getElementById('missionText').textContent = t.missionText;
+            document.getElementById('valuesTitle').textContent = t.valuesTitle;
+            document.getElementById('valuesList').innerHTML = t.values.map(v => `<span>${v}</span>`).join('');
+
+            // How We Work
+            document.getElementById('howTitle').textContent = t.howTitle;
+            document.getElementById('howSubtitle').textContent = t.howSubtitle;
+            document.getElementById('step1Title').textContent = t.step1Title;
+            document.getElementById('step1Desc').textContent = t.step1Desc;
+            document.getElementById('step2Title').textContent = t.step2Title;
+            document.getElementById('step2Desc').textContent = t.step2Desc;
+            document.getElementById('step3Title').textContent = t.step3Title;
+            document.getElementById('step3Desc').textContent = t.step3Desc;
+            document.getElementById('step4Title').textContent = t.step4Title;
+            document.getElementById('step4Desc').textContent = t.step4Desc;
+
+            // Gallery
+            document.getElementById('galleryTitle').textContent = t.galleryTitle;
+            document.getElementById('gallerySubtitle').textContent = t.gallerySubtitle;
+            const galleryGrid = document.getElementById('galleryGrid');
+            const galleryImages = [
+                SITE_CONFIG.images.g1, SITE_CONFIG.images.g2, SITE_CONFIG.images.g3, SITE_CONFIG.images.g4,
+                SITE_CONFIG.images.g5, SITE_CONFIG.images.g6, SITE_CONFIG.images.g7, SITE_CONFIG.images.g8
+            ];
+            galleryGrid.innerHTML = galleryImages.map((img, i) => `
+                <div class="gallery-item reveal">
+                    <img src="${img}" alt="Gallery Image ${i + 1}" loading="lazy">
+                </div>
+            `).join('');
+
+            // Presence
+            document.getElementById('presenceTitle').textContent = t.presenceTitle;
+            const presenceGrid = document.getElementById('presenceGrid');
+            presenceGrid.innerHTML = t.presence.map(p => `
+                <div class="presence-card reveal">
+                    <div class="presence-info">
+                        <div class="presence-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>${p.city}</h3>
+                        <div class="sub">${p.sub}</div>
+                        <p>${p.desc}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            // Work Details
+            document.getElementById('detailHoursTitle').textContent = t.detailHoursTitle;
+            document.getElementById('detailHoursText').textContent = t.detailHoursText;
+            document.getElementById('detailCoverageTitle').textContent = t.detailCoverageTitle;
+            document.getElementById('detailCoverageText').textContent = t.detailCoverageText;
+            document.getElementById('detailPartnersTitle').textContent = t.detailPartnersTitle;
+            document.getElementById('detailPartnersText').textContent = t.detailPartnersText;
+
+            // Contact
+            document.getElementById('contactTitle').textContent = t.contactTitle;
+            document.getElementById('contactDesc').textContent = t.contactDesc;
+            
+            const contactGrid = document.getElementById('contactGrid');
+            contactGrid.innerHTML = SITE_CONFIG.phones.map(phone => `
+                <div class="contact-card reveal">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="contact-number">${phone.display}</div>
+                    <div class="contact-buttons">
+                        <a href="tel:${phone.number}" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> ${t.contactBtnCall}
+                        </a>
+                        <a href="https://wa.me/${phone.whatsapp}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i class="fab fa-whatsapp"></i> ${t.contactBtnWhatsapp}
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('contactMapLink').href = SITE_CONFIG.locationLink;
+            document.getElementById('contactMapText').textContent = t.contactMapText;
+
+            // Footer
+            document.getElementById('footerLogo').textContent = companyName;
+            document.getElementById('footerDesc').textContent = t.footerDesc;
+            document.getElementById('footerNavTitle').textContent = t.footerNavTitle;
+            document.getElementById('footerServicesTitle').textContent = t.footerServicesTitle;
+            document.getElementById('footerCopyright').textContent = t.footerCopyright;
+
+            document.getElementById('footerNavList').innerHTML = navItems.map(item => `<li><a href="${item.href}">${item.text}</a></li>`).join('');
+            document.getElementById('footerServicesList').innerHTML = t.sectors.map(s => `<li><a href="#sectors">${s.nameAr}</a></li>`).join('');
+
+            initScrollReveal();
+        }
+
+        function initMobileMenu() {
+            const menuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+                const spans = menuBtn.querySelectorAll('span');
+                if (mobileMenu.classList.contains('active')) {
+                    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                    spans[1].style.opacity = '0';
+                    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+                } else {
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                }
+            });
+
+            mobileMenu.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A') {
+                    mobileMenu.classList.remove('active');
+                    const spans = menuBtn.querySelectorAll('span');
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                }
+            });
+        }
+
+        function initScrollReveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            reveals.forEach(reveal => revealObserver.observe(reveal));
+        }
+
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerOffset = 85;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                });
+            });
+        }
+
+        function initHeaderScroll() {
+            const header = document.getElementById('mainHeader');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        }
+
+        document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+        document.getElementById('langToggle').addEventListener('click', toggleLanguage);
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992) {
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                    const spans = document.querySelector('#mobileMenuBtn').querySelectorAll('span');
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
