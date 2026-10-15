@@ -44,13 +44,13 @@
             --border-color: #EBE3D5;
             --border-light: #F5EFE6;
             
-            --glass-bg: rgba(255, 255, 255, 0.55);
+            --glass-bg: rgba(255, 255, 255, 0.75);
             --glass-border: rgba(255, 255, 255, 0.6);
             --glass-shadow: 0 8px 32px rgba(13, 59, 54, 0.08);
             --glass-blur: blur(24px) saturate(180%);
             
-            --header-bg: rgba(253, 251, 247, 0.7);
-            --header-bg-scrolled: rgba(253, 251, 247, 0.92);
+            --header-bg: rgba(255, 255, 255, 0.85);
+            --header-bg-scrolled: rgba(255, 255, 255, 0.98);
             
             --card-shadow: 0 4px 24px rgba(13, 59, 54, 0.06);
             --card-shadow-hover: 0 24px 60px rgba(13, 59, 54, 0.15);
@@ -80,12 +80,12 @@
             --border-color: #1E5C54;
             --border-light: #124F48;
             
-            --glass-bg: rgba(13, 59, 54, 0.55);
+            --glass-bg: rgba(13, 59, 54, 0.7);
             --glass-border: rgba(255, 255, 255, 0.08);
             --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             
-            --header-bg: rgba(8, 31, 28, 0.7);
-            --header-bg-scrolled: rgba(8, 31, 28, 0.92);
+            --header-bg: rgba(13, 59, 54, 0.85);
+            --header-bg-scrolled: rgba(13, 59, 54, 0.98);
             
             --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
             --card-shadow-hover: 0 24px 60px rgba(0, 0, 0, 0.5);
@@ -299,7 +299,7 @@
             background-color: var(--header-bg);
             backdrop-filter: var(--glass-blur);
             -webkit-backdrop-filter: var(--glass-blur);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             transition: var(--transition);
         }
 
@@ -309,7 +309,6 @@
             box-shadow: 0 8px 32px rgba(13, 59, 54, 0.08);
         }
 
-        /* Subtle gradient bottom line */
         header::after {
             content: '';
             position: absolute;
@@ -350,7 +349,6 @@
             transition: var(--transition);
         }
 
-        /* Subtle radial glow behind the logo */
         .logo::before {
             content: '';
             position: absolute;
@@ -462,8 +460,8 @@
         }
 
         .icon-btn {
-            background: rgba(255, 255, 255, 0.4);
-            border: 1.5px solid rgba(230, 81, 0, 0.15);
+            background: rgba(255, 255, 255, 0.5);
+            border: 1.5px solid rgba(230, 81, 0, 0.2);
             color: var(--text-primary);
             width: 42px;
             height: 42px;
@@ -481,7 +479,8 @@
         }
 
         [data-theme="dark"] .icon-btn {
-            background: rgba(13, 59, 54, 0.4);
+            background: rgba(13, 59, 54, 0.5);
+            border-color: rgba(242, 145, 0, 0.3);
         }
 
         .icon-btn:hover {
@@ -2272,7 +2271,7 @@
                 
                 heroBadge: "شركة قابضة متعددة القطاعات",
                 heroTitle: "وادي فليفل قروب القابضة",
-                heroDesc: "شركة قابضة رائدة في مجالات الطرق، واستيراد وتصدير الآليات وقطع الغيار والكسارات. نقدم حلولاً متكاملة بأعلى معايير الجودة والاحترافية.",
+                heroDesc: "شركة قابضة رائدة في مجالات الطرق، واستيراد وتصدير الآليات وقطع الغيار، والمحاجر والكسارات. نقدم حلولاً متكاملة بأعلى معايير الجودة والاحترافية.",
                 heroBtn1: "استكشف قطاعاتنا",
                 heroBtn2: "تواصل معنا",
                 
@@ -2281,7 +2280,7 @@
                     { icon: "fa-road", label: "مشاريع الطرق" },
                     { icon: "fa-truck", label: "الآليات والمعدات" },
                     { icon: "fa-cogs", label: "قطع الغيار" },
-                    { icon: "fa-industry", label: "الكسارات" }
+                    { icon: "fa-mountain", label: "محاجر وكسارات" }
                 ],
                 
                 // Sectors
@@ -2310,22 +2309,22 @@
                         features: ["قطع أصلية", "توريد سريع", "ضمان الجودة"]
                     },
                     {
-                        icon: "fa-industry",
-                        nameAr: "استيراد وتصدير الكسارات",
-                        nameEn: "CRUSHERS IMPORT & EXPORT",
-                        desc: "استيراد وتصدير الكسارات ومعدات التكسير والغربلة المستخدمة في صناعة مواد البناء والتعدين.",
-                        features: ["كسارات متنقلة", "معدات تكسير", "خطوط إنتاج"]
+                        icon: "fa-mountain",
+                        nameAr: "محاجر وكسارات",
+                        nameEn: "QUARRIES & CRUSHERS",
+                        desc: "استخراج المواد الخام من المحاجر وتشغيل الكسارات لإنتاج مواد البناء والتعدين بأعلى المعايير.",
+                        features: ["استخراج المواد", "تكسير وغربلة", "إنتاج مواد البناء"]
                     }
                 ],
                 
                 aboutTitle: "عن الشركة",
-                aboutP1: "وادي فليفل قروب القابضة هي شركة ليبية رائدة تعمل كشركة قابضة متعددة القطاعات، تشمل تنفيذ مشاريع الطرق، واستيراد وتصدير الآليات وقطع الغيار والكسارات، من خلال منظومة متكاملة من الشركات التابعة.",
+                aboutP1: "وادي فليفل قروب القابضة هي شركة ليبية رائدة تعمل كشركة قابضة متعددة القطاعات، تشمل تنفيذ مشاريع الطرق، واستيراد وتصدير الآليات وقطع الغيار، والمحاجر والكسارات، من خلال منظومة متكاملة من الشركات التابعة.",
                 aboutP2: "نجمع بين خبرة ميدانية واسعة وبين معايير عمل حديثة، لنقدم لعملائنا حلولاً موثوقة وعالية الجودة تلبي احتياجات السوق المحلي والإقليمي، مع الالتزام بأعلى معايير الشفافية والاحترافية.",
                 
                 visionTitle: "رؤيتنا",
                 visionText: "أن نكون الشركة القابضة الأكثر تأثيراً وثقة في ليبيا، من خلال حلول مبتكرة تواكب أفضل المعايير العالمية.",
                 missionTitle: "رسالتنا",
-                missionText: "تقديم خدمات متكاملة في مجالات الطرق والاستيراد والتصدير، تعتمد على الجودة والشفافية، لتحقيق قيمة حقيقية لعملائنا وشركائنا.",
+                missionText: "تقديم خدمات متكاملة في مجالات الطرق والاستيراد والتصدير والمحاجر، تعتمد على الجودة والشفافية، لتحقيق قيمة حقيقية لعملائنا وشركائنا.",
                 valuesTitle: "قيمنا",
                 values: ["المصداقية", "الاحترافية", "الابتكار", "الجودة", "الشراكة", "رضا العملاء"],
                 
@@ -2353,7 +2352,7 @@
                 detailCoverageTitle: "نطاق الخدمة",
                 detailCoverageText: "جميع أنحاء ليبيا والمنطقة الإقليمية.",
                 detailPartnersTitle: "الشراكات",
-                detailPartnersText: "شركات محلية ودولية في مجال الطرق والاستيراد والتصدير.",
+                detailPartnersText: "شركات محلية ودولية في مجال الطرق والاستيراد والتصدير والمحاجر.",
                 
                 contactTitle: "تواصل معنا",
                 contactDesc: "للاستفسار أو الشراكة، تواصل معنا في أي وقت.",
@@ -2361,7 +2360,7 @@
                 contactBtnWhatsapp: "واتساب",
                 contactMapText: "موقعنا على الخريطة",
                 
-                footerDesc: "شركة قابضة ليبية رائدة في مجالات الطرق، استيراد وتصدير الآليات وقطع الغيار والكسارات.",
+                footerDesc: "شركة قابضة ليبية رائدة في مجالات الطرق، استيراد وتصدير الآليات وقطع الغيار، والمحاجر والكسارات.",
                 footerNavTitle: "روابط سريعة",
                 footerServicesTitle: "قطاعاتنا",
                 footerCopyright: "© 2026 وادي فليفل قروب القابضة — جميع الحقوق محفوظة."
@@ -2377,7 +2376,7 @@
                 
                 heroBadge: "Multi-Sector Holding Company",
                 heroTitle: "WADI FLAFL GROUP HOLDING",
-                heroDesc: "A leading holding company in roads, import and export of machinery, spare parts, and crushers. We provide integrated solutions with the highest quality and professionalism.",
+                heroDesc: "A leading holding company in roads, import and export of machinery and spare parts, and quarries and crushers. We provide integrated solutions with the highest quality and professionalism.",
                 heroBtn1: "Explore Our Sectors",
                 heroBtn2: "Contact Us",
                 
@@ -2385,7 +2384,7 @@
                     { icon: "fa-road", label: "Road Projects" },
                     { icon: "fa-truck", label: "Machinery & Equipment" },
                     { icon: "fa-cogs", label: "Spare Parts" },
-                    { icon: "fa-industry", label: "Crushers" }
+                    { icon: "fa-mountain", label: "Quarries & Crushers" }
                 ],
                 
                 sectorsTitle: "Our Sectors & Products",
@@ -2413,22 +2412,22 @@
                         features: ["Original Parts", "Fast Supply", "Quality Guarantee"]
                     },
                     {
-                        icon: "fa-industry",
-                        nameAr: "Crushers Import & Export",
-                        nameEn: "CRUSHERS IMPORT & EXPORT",
-                        desc: "Importing and exporting crushers, crushing and screening equipment used in building materials and mining industries.",
-                        features: ["Mobile Crushers", "Crushing Equipment", "Production Lines"]
+                        icon: "fa-mountain",
+                        nameAr: "Quarries & Crushers",
+                        nameEn: "QUARRIES & CRUSHERS",
+                        desc: "Extracting raw materials from quarries and operating crushers to produce building and mining materials with the highest standards.",
+                        features: ["Material Extraction", "Crushing & Screening", "Building Materials"]
                     }
                 ],
                 
                 aboutTitle: "About Us",
-                aboutP1: "WADI FLAFL GROUP HOLDING is a leading Libyan multi-sector holding company, including road construction projects, import and export of machinery, spare parts, and crushers, through an integrated system of subsidiaries.",
+                aboutP1: "WADI FLAFL GROUP HOLDING is a leading Libyan multi-sector holding company, including road construction projects, import and export of machinery, spare parts, and quarries and crushers, through an integrated system of subsidiaries.",
                 aboutP2: "We combine extensive field experience with modern work standards to provide our clients with reliable and high-quality solutions that meet the needs of the local and regional market, with commitment to the highest standards of transparency and professionalism.",
                 
                 visionTitle: "Our Vision",
                 visionText: "To be the most influential and trusted holding company in Libya, through innovative solutions that keep pace with the best global standards.",
                 missionTitle: "Our Mission",
-                missionText: "Providing integrated services in roads, import, and export, based on quality and transparency, to achieve real value for our clients and partners.",
+                missionText: "Providing integrated services in roads, import, export, and quarries, based on quality and transparency, to achieve real value for our clients and partners.",
                 valuesTitle: "Our Values",
                 values: ["Credibility", "Professionalism", "Innovation", "Quality", "Partnership", "Client Satisfaction"],
                 
@@ -2456,7 +2455,7 @@
                 detailCoverageTitle: "Coverage",
                 detailCoverageText: "All of Libya and the regional area.",
                 detailPartnersTitle: "Partnerships",
-                detailPartnersText: "Local and international companies in roads, import, and export.",
+                detailPartnersText: "Local and international companies in roads, import, export, and quarries.",
                 
                 contactTitle: "Contact Us",
                 contactDesc: "For inquiries or partnership, contact us at any time.",
@@ -2464,7 +2463,7 @@
                 contactBtnWhatsapp: "WhatsApp",
                 contactMapText: "Our Location on Map",
                 
-                footerDesc: "A leading Libyan holding company in roads, import and export of machinery, spare parts, and crushers.",
+                footerDesc: "A leading Libyan holding company in roads, import and export of machinery and spare parts, and quarries and crushers.",
                 footerNavTitle: "Quick Links",
                 footerServicesTitle: "Our Sectors",
                 footerCopyright: "© 2026 WADI FLAFL GROUP HOLDING — All rights reserved."
